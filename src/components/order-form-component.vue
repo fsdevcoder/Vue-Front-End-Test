@@ -309,16 +309,23 @@
   }
 
   .options .option .custom-checkbox .custom-control-label::before {
-    border-radius:100%;
+    border-radius:50%;
     top: 0.15rem;
     left: -1.2rem;
     width: 0.7rem;
     height: 0.7rem;
-    border: #000000 solid 2px;
+    border: #555555 solid 1.5px;
+  }
+
+  .options .option .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-image: none;
+    border: none;
+    background-color: green;
   }
 
   .options .option .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
     background-image: none;
+    /* background-color: green; */
   }
 
   .options .option .additional {

@@ -163,7 +163,7 @@
     }
     .order-component .order-modal {
       max-width: 500px;
-      max-height: 690px;
+      max-height: 680px;
       width:90%;
       
       position: absolute;

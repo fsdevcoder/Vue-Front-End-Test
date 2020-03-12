@@ -16,7 +16,7 @@
                   :state="errors[0] ? false : (valid ? true : null)"
                   :placeholder="sourcePlaceholder"
                 ></b-form-input>
-                <b-form-invalid-feedback class="inputLiveFeedback">{{ errors[0] }}</b-form-invalid-feedback>
+                <!-- <b-form-invalid-feedback class="inputLiveFeedback">{{ errors[0] }}</b-form-invalid-feedback> -->
               </b-form-group>
             </validation-provider>
 
@@ -30,7 +30,6 @@
                   rows="2"
                   no-resize
                 ></b-form-textarea>
-                <b-form-invalid-feedback class="inputLiveFeedback">{{ errors[0] }}</b-form-invalid-feedback>
               </b-form-group>
             </validation-provider>
 
@@ -49,7 +48,6 @@
                       :placeholder="numberWritersPlaceholder"
                       :options="writersOptions"
                     ></b-form-select>
-                    <b-form-invalid-feedback class="inputLiveFeedback">{{ errors[0] }}</b-form-invalid-feedback>
                   </b-form-group>
                 </validation-provider>
               </b-col>
@@ -68,7 +66,6 @@
                         :state="errors[0] ? false : (valid ? true : null)"
                         :placeholder="budgetPlaceholder"
                       ></b-form-input>
-                    <b-form-invalid-feedback class="inputLiveFeedback">{{ errors[0] }}</b-form-invalid-feedback>
                     </b-input-group>
                   </b-form-group>
                 </validation-provider>
@@ -102,7 +99,6 @@
                   $ {{ totalBudget }}
                 </div>
           </b-button>
-      <!--    <b-button type="reset" variant="danger">Reset</b-button> -->
         </b-form>
       </validation-observer>
     </div>
